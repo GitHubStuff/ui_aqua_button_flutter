@@ -1,10 +1,9 @@
 // ignore_for_file: sort_child_properties_last
 
 import 'package:flutter/material.dart';
+import 'package:ui_aqua_button/ui_aqua_button.dart';
 
 import '../gen/assets.gen.dart';
-
-import 'package:package_template/package_template.dart';
 
 class HomeScaffold extends StatelessWidget {
   const HomeScaffold({super.key});
@@ -18,10 +17,7 @@ class HomeScaffold extends StatelessWidget {
   }
 
   Widget homeWidget(BuildContext context) {
-    //TODO: Replace with your own code
-    // ignore: non_constant_identifier_names
-    final PackageTemplate package_template = PackageTemplate();
-    debugPrint('$package_template');
+    const uiAquaButton = AquaButton();
     return Center(
       child: Column(
         mainAxisAlignment: MainAxisAlignment.center,
@@ -31,9 +27,11 @@ class HomeScaffold extends StatelessWidget {
             height: 200,
             child: Padding(
               padding: const EdgeInsets.all(8.0),
-              child: Assets.images.ltmm1024x1024.image(),
+              child: Assets.images.sphere1024x1024.image(),
             ),
           ),
+          const SizedBox(height: 20),
+          uiAquaButton,
         ],
       ),
     );

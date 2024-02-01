@@ -1,9 +1,5 @@
 # SETUP
 
-- Find/Replace `package_template` to name of the name of the package (ex: `flutter_rocks`)
-- Addess the *TODO:* in the **/example** folder by adding code from the package
-- If needed/wanted follow the instructions in the **/example/README.md** to have the example app more reflective of your package and show off features of widget packages.
-
 <!--
 The comments below are from the Flutter/Dart package generation. Feel free to use or ignore
 -->
@@ -21,12 +17,12 @@ and the Flutter guide for
 [developing packages and plugins](https://flutter.dev/developing-packages).
 -->
 
-TODO: Put a short description of the package here that helps potential users
-know whether this package might be useful for them.
+Draws an MacOS-X old-style aqua sphere:![aqua sphere](example/assets/images/sphere1024x1024.png)
 
 ## Features
 
-TODO: List what your package can do. Maybe include images, gifs, or videos.
+- Control on color (Default: Red)
+- Control on radius (Default: 10.0 pixels)
 
 ## Getting started
 
