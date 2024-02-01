@@ -1,6 +1,6 @@
 import 'package:flutter_test/flutter_test.dart';
 
-//import 'package:ui_aqua_button/ui_aqua_button.dart';
+//import 'package:ui_aqua_button_flutter/ui_aqua_button_flutter.dart';
 
 void main() {
   test('adds one to input values', () {

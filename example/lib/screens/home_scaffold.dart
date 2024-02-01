@@ -1,9 +1,5 @@
-// ignore_for_file: sort_child_properties_last
-
 import 'package:flutter/material.dart';
-import 'package:ui_aqua_button/ui_aqua_button.dart';
-
-import '../gen/assets.gen.dart';
+import 'package:ui_aqua_button_flutter/ui_aqua_button_flutter.dart';
 
 class HomeScaffold extends StatelessWidget {
   const HomeScaffold({super.key});
@@ -18,19 +14,12 @@ class HomeScaffold extends StatelessWidget {
 
   Widget homeWidget(BuildContext context) {
     const uiAquaButton = AquaButton();
-    return Center(
+    return const Center(
       child: Column(
         mainAxisAlignment: MainAxisAlignment.center,
         children: [
-          SizedBox(
-            width: 200,
-            height: 200,
-            child: Padding(
-              padding: const EdgeInsets.all(8.0),
-              child: Assets.images.sphere1024x1024.image(),
-            ),
-          ),
-          const SizedBox(height: 20),
+          Text('UI Aqua Button'),
+          SizedBox(height: 20),
           uiAquaButton,
         ],
       ),

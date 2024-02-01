@@ -1,4 +1,4 @@
-library ui_aqua_button;
+library ui_aqua_button_flutter;
 
 import 'package:flutter/material.dart';
 

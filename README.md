@@ -30,8 +30,8 @@ In pubspec.yaml file
 
 ```yaml
 dev_dependencies:
-  ui_aqua_button:
-    git: git@github.com:GitHubStuff/ui_aqua_button.git
+  ui_aqua_button_flutter:
+    git: git@github.com:GitHubStuff/ui_aqua_button_flutter.git
 ```
 
 ## Usage
@@ -56,7 +56,7 @@ const AquaButton({
 
 ## Additional information
 
-Source code at [GitHub](https://github.com/GitHubStuff/ui_aqua_button)
+Source code at [GitHub](https://github.com/GitHubStuff/ui_aqua_button_flutter)
 
 ## Finally
 
