@@ -2,4 +2,4 @@
 
 ## 0.0.1
 
-* TODO: Describe initial release.
+* 2024-02-01: Released to GitHub as public repo.

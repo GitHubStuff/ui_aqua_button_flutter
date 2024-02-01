@@ -26,20 +26,38 @@ Draws an MacOS-X old-style aqua sphere:![aqua sphere](example/assets/images/sphe
 
 ## Getting started
 
-TODO: List prerequisites and provide or point to information on how to
-start using the package.
+In pubspec.yaml file
+
+```yaml
+dev_dependencies:
+  ui_aqua_button:
+    git: git@github.com:GitHubStuff/ui_aqua_button.git
+```
 
 ## Usage
 
-TODO: Include short and useful examples for package users. Add longer examples
-to `/example` folder.
+Full demo in /example folder
 
 ```dart
-const like = 'sample';
+Container(
+    child: AquaButton(),
+);
+```
+
+Example Constructor:
+
+```dart
+const AquaButton({
+    super.key,
+    this.color = Colors.red,
+    this.mainRadius = 10.0,
+  });
 ```
 
 ## Additional information
 
-TODO: Tell users more about the package: where to find more information, how to
-contribute to the package, how to file issues, what response they can expect
-from the package authors, and more.
+Source code at [GitHub](https://github.com/GitHubStuff/ui_aqua_button)
+
+## Finally
+
+Be kind to each other

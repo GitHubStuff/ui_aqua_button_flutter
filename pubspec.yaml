@@ -1,5 +1,5 @@
 name: ui_aqua_button
-description: "A new Flutter package project."
+description: "Widget to display MacOS-X Aqua-Style button."
 version: 0.0.1
 home_page: http://www.icodeforyou.com
 publish_to: none # Remove this line if you wish to publish to pub.dev
