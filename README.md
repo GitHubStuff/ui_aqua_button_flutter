@@ -1,4 +1,4 @@
-# SETUP
+# Purpose
 
 <!--
 The comments below are from the Flutter/Dart package generation. Feel free to use or ignore
@@ -17,7 +17,7 @@ and the Flutter guide for
 [developing packages and plugins](https://flutter.dev/developing-packages).
 -->
 
-Draws an MacOS-X old-style aqua sphere:![aqua sphere](example/assets/images/sphere1024x1024.png)
+Draws an MacOS-X old-style aqua sphere:![aqua sphere](example/assets/images/sphere1024x1024.png){: width="100px" height="100px"}
 
 ## Features
 
@@ -31,7 +31,7 @@ In pubspec.yaml file
 ```yaml
 dev_dependencies:
   ui_aqua_button_flutter:
-    git: git@github.com:GitHubStuff/ui_aqua_button_flutter.git
+    git: https://github.com/GitHubStuff/ui_aqua_button_flutter.git
 ```
 
 ## Usage
@@ -49,7 +49,7 @@ Example Constructor:
 ```dart
 const AquaButton({
     super.key,
-    this.color = Colors.red,
+    this.materialColor = Colors.red,
     this.mainRadius = 10.0,
   });
 ```

@@ -3,12 +3,12 @@ library ui_aqua_button_flutter;
 import 'package:flutter/material.dart';
 
 class AquaButton extends StatelessWidget {
-  final MaterialColor color;
+  final MaterialColor materialColor;
   final double mainRadius;
 
   const AquaButton({
     super.key,
-    this.color = Colors.red,
+    this.materialColor = Colors.red,
     this.mainRadius = 10.0,
   });
 
@@ -17,17 +17,17 @@ class AquaButton extends StatelessWidget {
     double northPoleRadius = mainRadius * 0.85;
 
     return Container(
-      width: mainRadius * 2,
-      height: mainRadius * 2,
+      width: mainRadius * 2.0,
+      height: mainRadius * 2.0,
       decoration: BoxDecoration(
         gradient: LinearGradient(
           begin: Alignment.topCenter,
           end: Alignment.bottomCenter,
           colors: [
-            color,
-            color[900]!,
-            color[700]!,
-            color[500]!,
+            materialColor,
+            materialColor[900]!,
+            materialColor[700]!,
+            materialColor[500]!,
           ],
         ),
         shape: BoxShape.circle,
@@ -58,7 +58,7 @@ class AquaButton extends StatelessWidget {
             alignment: Alignment.bottomCenter,
             child: ClipOval(
               child: CustomPaint(
-                size: Size(mainRadius * 2, mainRadius * 2),
+                size: Size(mainRadius * 2.0, mainRadius * 2.0),
                 painter: _TrianglePainter(mainRadius: mainRadius),
               ),
             ),
@@ -80,7 +80,7 @@ class _TrianglePainter extends CustomPainter {
     double triangleBase = size.width * 1.0;
 
     Path path = Path()
-      ..moveTo(size.width / 2, size.height - triangleHeight)
+      ..moveTo(size.width / 2.0, size.height - triangleHeight)
       ..lineTo(0, size.height)
       ..lineTo(triangleBase, size.height)
       ..close();
@@ -97,7 +97,7 @@ class _TrianglePainter extends CustomPainter {
     final paint = Paint()
       ..shader = gradient.createShader(
         Rect.fromPoints(
-          Offset(0, size.height - triangleHeight),
+          Offset(0.0, size.height - triangleHeight),
           Offset(triangleBase, size.height),
         ),
       );
